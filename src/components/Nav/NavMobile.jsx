@@ -3,10 +3,10 @@ import { Icon } from "@iconify/react";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const clientes = [
-    { titulo: "Personal", direccion: "/personal" },
-    { titulo: "Plantillas", direccion: "/plantillas" },
-    { titulo: "Evaluaciones", direccion: "/evaluaciones" },
-    { titulo: "Estadisticas", direccion: "/estadisticas" },
+  { titulo: "Projects", direccion: "/" },
+  { titulo: "Tokens", direccion: "/" },
+  { titulo: "Dashboard", direccion: "/" },
+  { titulo: "Education", direccion: "/" },
   ];
 
 const NavMobile = ({opened,setOpened,logo,user,setUser,}) => {

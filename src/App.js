@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Nav from "./components/Nav/Nav";
 import Home from "./components/Home/Home";
 import Projects from "./pages/Projects";
+import Project from "./pages/Project";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/register" exacct element={<RegisterClient />} />
           <Route path="/" exacct element={<Home />} />
           <Route path="/projects" exacct element={<Projects />} />
+          <Route path="/project" exacct element={<Project />} />
 
         </Routes>
       </Router>

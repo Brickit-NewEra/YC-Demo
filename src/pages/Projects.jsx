@@ -1,5 +1,8 @@
 import React from "react";
 import Card from "../components/ProjectCard";
+import project1 from '../image/project1.png';
+import project2 from '../image/project2.png';
+import project3 from '../image/project3.png';
 
 const Projects = () => {
   const projects = [
@@ -8,8 +11,9 @@ const Projects = () => {
       tipoProyecto: "Desarrollo de viviendas",
       descripcion:
         "Un proyecto residencial de lujo con casas unifamiliares rodeadas de áreas verdes y comodidades modernas.",
-      pais: "Estados Unidos",
+      pais: "Uruguay",
       riesgo: "Moderado",
+      img:project1
     },
     {
       titulo: "Torres del Horizonte",
@@ -18,46 +22,52 @@ const Projects = () => {
         "Un conjunto de torres de apartamentos con vista panorámica a la ciudad y amplias zonas recreativas.",
       pais: "México",
       riesgo: "Bajo",
+      img:project2
     },
     {
-      titulo: "Centro Comercial Plaza Central",
+      titulo: "Centro Comercial",
       tipoProyecto: "Desarrollo comercial",
       descripcion:
-        "Un moderno centro comercial con tiendas de renombre, cines y restaurantes, ubicado en una zona de alto tráfico.",
+        "Un moderno centro comercial con tiendas de renombre, cines y restaurantes.",
       pais: "España",
       riesgo: "Alto",
+      img:project3
     },
     {
-      titulo: "Complejo Residencial Playa Serena",
+      titulo: "Complejo Residencial",
       tipoProyecto: "Resort frente al mar",
       descripcion:
         "Un resort de lujo ubicado en primera línea de playa, con villas privadas, piscinas y acceso exclusivo al mar.",
-      pais: "República Dominicana",
+      pais: "Brasil",
       riesgo: "Moderado",
+      img:project1
     },
     {
-      titulo: "Oficinas Corporativas SkyTower",
+      titulo: "Oficinas  SkyTower",
       tipoProyecto: "Desarrollo de oficinas",
       descripcion:
         "Un rascacielos de oficinas de última generación con tecnología avanzada y espacios flexibles para empresas.",
       pais: "Canadá",
       riesgo: "Moderado",
+      img:project2
     },
     {
-      titulo: "Proyecto Ecológico VerdeVida",
+      titulo: "Proyecto VerdeVida",
       tipoProyecto: "Comunidad sostenible",
       descripcion:
-        "Una comunidad residencial ecológica con casas energéticamente eficientes, huertos comunitarios y áreas de conservación.",
+        "Una comunidad residencial ecológica con casas energéticamente eficientes y áreas de conservación.",
       pais: "Costa Rica",
       riesgo: "Bajo",
+      img:project3
     },
     {
-      titulo: "Complejo Deportivo SportMax",
+      titulo: "Complejo SportMax",
       tipoProyecto: "Instalaciones deportivas",
       descripcion:
-        "Un centro deportivo de primer nivel con canchas de tenis, piscinas olímpicas, gimnasios y espacios para entrenamiento.",
+        "Un centro deportivo de primer nivel con canchas de tenis y espacios para entrenamiento.",
       pais: "Argentina",
       riesgo: "Moderado",
+      img:project1
     },
     {
       titulo: "Residencias BellaVista",
@@ -66,14 +76,16 @@ const Projects = () => {
         "Una urbanización cerrada con casas contemporáneas, áreas recreativas y seguridad 24/7.",
       pais: "Colombia",
       riesgo: "Bajo",
+      img:project2
     },
     {
       titulo: "Torre Financiera CityScape",
       tipoProyecto: "Edificio de oficinas",
       descripcion:
-        "Una torre de oficinas de alto nivel en el corazón financiero de la ciudad, con espacios premium y tecnología avanzada.",
+        "Una torre de oficinas de alto nivel en el corazón financiero de la ciudad, con espacios premium .",
       pais: "Chile",
       riesgo: "Alto",
+      img:project3
     },
     {
       titulo: "Resort Montaña Dorada",
@@ -82,6 +94,7 @@ const Projects = () => {
         "Un resort de montaña con cabañas acogedoras, actividades al aire libre y vistas panorámicas de la naturaleza.",
       pais: "Perú",
       riesgo: "Moderado",
+      img:project1
     },
   ];
 
@@ -98,6 +111,7 @@ const Projects = () => {
               desc={pr.descripcion}
               country={pr.pais}
               risk={pr.riesgo}
+              img={pr.img}
             />
           );
         })}
