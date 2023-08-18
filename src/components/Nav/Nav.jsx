@@ -7,9 +7,9 @@ import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
 
 
-const Nav = () => {
+const Nav = ({user,setUser}) => {
   const [opened, setOpened] = useState(false);
-  const [user, setUser] = useState({activo:true});
+
   let navigate = useNavigate();
 
   useEffect(() => {

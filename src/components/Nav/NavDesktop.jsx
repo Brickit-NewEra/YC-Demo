@@ -1,12 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Icon } from "@iconify/react";
 import { Navigate, useNavigate } from "react-router-dom";
 
+
 const clientes = [
     { titulo: "Projects", direccion: "/projects" },
-    { titulo: "Tokens", direccion: "/" },
-    { titulo: "Dashboard", direccion: "/" },
-    { titulo: "Education", direccion: "/" },
+    { titulo: "Portfolio", direccion: "/" },
   ];
 
 const NavDesktop = ({logo,user,setUser}) => {
@@ -18,20 +17,13 @@ const NavDesktop = ({logo,user,setUser}) => {
       {!user.activo && (
         <div className="flex flex-row items-center">
           <button
-            className="cursor-pointer text-white bg-violet500 border-[2px] rounded-[10px] border-violet500 font-regular font-medium font- text-[20px] px-8 py-[5px] "
+            className="flex flex-row items-center justify-centercursor-pointer text-white bg-violet500 border-[2px] rounded-[20px] border-violet500 font-regular font-medium font- text-[20px] px-4 py-[5px] "
             onClick={() => {
               navigate("/login");
             }}
           >
-            Ingresar
-          </button>
-          <button
-            className="cursor-pointer text-violet500 bg-transparent border-[2px] rounded-[10px] border-violet500 font-regular font-medium font- text-[20px] px-4 py-[5px] ml-4"
-            onClick={() => {
-              navigate("/registro");
-            }}
-          >
-            Registrarme
+            Abrir cuenta
+            <Icon icon="formkit:arrowright" width="20" className='text-white ml-2'/>
           </button>
         </div>
       )}
@@ -44,7 +36,7 @@ const NavDesktop = ({logo,user,setUser}) => {
               </a>
             );
           })}
-          <button className="cursor-pointer text-violet500 bg-transparent border-[2px] rounded-[10px] border-violet500 font-regular font-bold font- text-[18px] px-2 py-[5px] ml-20" onClick={()=>{navigate("")}}>
+          <button className="cursor-pointer text-violet500 bg-transparent border-[2px] rounded-[10px] border-violet500 font-regular font-bold font- text-[18px] px-2 py-[5px] ml-20" onClick={()=>{setUser({...user,activo:false});navigate("")}}>
             Cerrar sesión
           </button>
         </div>

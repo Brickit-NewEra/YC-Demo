@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from "../image/Isotipo.png";
 
-const Login = () => {
+const Login = ({user,setUser}) => {
   const [qrCode, setQrCode] = useState(null);
   const [displayQr, setDisplayQr] = useState(false);
   const [qrmodal, setQrmodal] = useState(false);
@@ -53,6 +53,7 @@ const Login = () => {
 
   const submitFormData = (e) => {
     e.preventDefault();
+    setUser({...user,activo:true})
     navigate("/projects")
 
   };
