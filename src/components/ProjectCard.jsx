@@ -13,7 +13,7 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
     />
   );
   const footer = (
-    <div className="flex flex-row justify-between items-center px-4 mb-4 mt-2">
+    <div className="flex flex-row justify-between items-center px-4 mb-4">
       <a href="/project">
         <button className="text-[20px] text-violet600 font-semibold">Read more</button>
       </a>
@@ -26,10 +26,10 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
     <Card
       footer={footer}
       header={header}
-      className=" bg-gray100 w-[350px] sm:[300px] md:w-[250px] lg:w-[350px] mx-2"
+      className=" bg-gray100 w-[350px] sm:[300px] md:w-[250px] lg:w-[350px] "
       style={{ borderRadius: "12px" }}
     >
-      <div className="p-4">
+      <div className="px-4">
         <h1 className="text-[24px] text-gray600">{title}</h1>
         <h1 className="text-[16px] text-gray400 mb-4">{type}</h1>
 
@@ -37,9 +37,9 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
         <br />
         <div className="flex flex-row items-center justify-start">
           <Chip label={country} className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />
-          {risk === "Bajo" && <Chip label={risk} icon="pi pi-apple" className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
-          {risk === "Moderado" && <Chip label={risk} icon="pi pi-apple" className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
-          {risk === "Alto" && <Chip label={risk} icon="pi pi-apple" className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
+          {risk === "Bajo" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
+          {risk === "Moderado" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
+          {risk === "Alto" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
 
         </div>
       </div>

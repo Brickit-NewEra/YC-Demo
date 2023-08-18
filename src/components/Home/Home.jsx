@@ -5,6 +5,7 @@ import Inverti from './Inverti'
 import Potencial from './Potencial'
 import Pasos from './Pasos'
 import Equipo from './Equipo'
+import Preguntas from './Preguntas'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Potencial />
       <Pasos />
       <Equipo />
+      <Preguntas />
     </>
   )
 }

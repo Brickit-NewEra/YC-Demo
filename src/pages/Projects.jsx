@@ -101,7 +101,7 @@ const Projects = () => {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-start pt-[100px]">
         <h1 className="mb-8 text-[40px]">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto w-[90%] sm:w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto w-[90%] sm:w-full">
         {projects.map((pr, index) => {
           return (
             <Card

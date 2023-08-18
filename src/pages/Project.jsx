@@ -39,8 +39,8 @@ const Project = () => {
             </div>
             <div className='mt-4 flex flex-row items-*center justify-between'>
                 <div className='flex flex-row items-center justify-start'>
-                    <Chip label="Land" icon="pi pi-apple" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
-                    <Chip label="Risk elevated" icon="pi pi-apple" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
+                    <Chip label="Land" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
+                    <Chip label="Risk elevated" icon="pi pi-angle-double-up" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
                 </div>
                 <h1 className='text-gray400 text-[20px]'>Colaborator : GAMA SA</h1>
             </div>
@@ -53,18 +53,18 @@ const Project = () => {
 
                 </div>
                 <div className='w-[18%] flex flex-col items-center justify-start shadow rounded-[12px] py-4 px-4'>
-                    <div className='flex items-center justify-start flex-col border-[1px] rounded-[12px] border-gray500 w-full'>
+                    <div className='flex items-center justify-start flex-col border-[1px] rounded-[12px] border-gray200 w-full'>
                         <h1 className='text-[24px] text-gray600 font-semibold'>SBEA</h1>
                         <h1 className='text-gray300'>South Beach</h1>
-                        <div className='h-[1px] bg-gray500 w-full mt-2'></div>
+                        <div className='h-[1px] bg-gray200 w-full mt-2 mb-4'></div>
                         <div className='w-full  flex flex-row items-center justify-around mb-2'>
                             <div className='flex flex-col items-start justify-start'>
                                 <h1>Start date:</h1>
                                 <h1>20/04/2023</h1>
                             </div>
                             <div className='flex flex-col items-start justify-start'>
-                                <h1>Start date:</h1>
-                                <h1>20/04/2023</h1>
+                                <h1>Finish date:</h1>
+                                <h1>05/02/2024</h1>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Project = () => {
                     <div className='h-[1px] bg-gray300 w-full mt-2'></div>
                     <div className='flex flex-row justify-betweem items-center w-full mt-4'>
                         <h1 className=' text-gray300 text-[16px] text-left w-full'>Expected profit</h1>
-                        <Chip label="25%" icon="pi pi-apple" className="mr-2 px-4 py-2 bg-[#0FB186] rounded-[20px] text-gray100" />
+                        <Chip label="25%"  className="mr-2 px-4 py-2 bg-[#0FB186] rounded-[20px] text-gray100" />
                     </div>
 
 
