@@ -4,12 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'primereact/resources/primereact.css';                       // core css
-import 'primeflex/primeflex.css';  
+import 'primereact/resources/primereact.css';
+import { PrimeReactProvider } from 'primereact/api';
+
+//theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+
+//core
+import "primereact/resources/primereact.min.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <PrimeReactProvider>
+      <App />
+    </PrimeReactProvider>
+
   </React.StrictMode>
 );
 

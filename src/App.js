@@ -24,7 +24,6 @@ function App() {
           <Route path="/" exacct element={<Home />} />
           <Route path="/projects" exacct element={<Projects />} />
           <Route path="/project" exacct element={<Project />} />
-
         </Routes>
       </Router>
     </>
