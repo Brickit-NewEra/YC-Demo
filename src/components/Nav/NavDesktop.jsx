@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const clientes = [
-    { titulo: "Projects", direccion: "/" },
+    { titulo: "Projects", direccion: "/projects" },
     { titulo: "Tokens", direccion: "/" },
     { titulo: "Dashboard", direccion: "/" },
     { titulo: "Education", direccion: "/" },

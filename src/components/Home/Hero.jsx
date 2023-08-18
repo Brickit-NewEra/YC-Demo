@@ -19,7 +19,7 @@ const Hero = () => {
                         </h1>
                         <h1
 
-                            className="text-[24px] w-[450px] text-left text-gray-400 "
+                            className="text-[24px] w-[450px] text-left text-gray400 "
                         >
                             Invierte tu dinero de forma inteligente en propiedades
                             inmobiliarias tokenizadas.
@@ -56,7 +56,7 @@ const Hero = () => {
                     Invierte tu dinero de forma inteligente en propiedades
                     inmobiliarias tokenizadas.
                 </h1>
-                <div className="flex flex-col sm:w-[40%] w-[80%] sm:w-full mt-6 items-center justify-between "
+                <div className="flex flex-col sm:w-[40%] w-[80%]  mt-6 items-center justify-between "
                 >
                     <button className="bg-violet500 text-white rounded-[30px] py-2 w-[100%] font-['Gelion'] text-[20px] mb-2">
                         Como funciona

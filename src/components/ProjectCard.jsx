@@ -13,7 +13,7 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
     />
   );
   const footer = (
-    <div className="flex flex-row justify-between items-center px-6 mb-4 mt-4">
+    <div className="flex flex-row justify-between items-center px-4 mb-4 mt-2">
       <a href="/project">
         <button className="text-[20px] text-violet600 font-semibold">Read more</button>
       </a>
@@ -33,7 +33,7 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
         <h1 className="text-[24px] text-gray600">{title}</h1>
         <h1 className="text-[16px] text-gray400 mb-4">{type}</h1>
 
-        <p className=" m-0 text-[16px] text-gray500 h-[100px]">{desc}</p>
+        <p className=" m-0 text-[16px] text-gray500 h-[70px]">{desc}</p>
         <br />
         <div className="flex flex-row items-center justify-start">
           <Chip label={country} className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />
