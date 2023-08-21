@@ -42,7 +42,7 @@ const Project = () => {
                     <Chip label="Land" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
                     <Chip label="Risk elevated" icon="pi pi-angle-double-up" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
                 </div>
-                <h1 className='text-gray400 text-[20px]'>Colaborator : GAMA SA</h1>
+                <h1 className='text-gray400 text-[20px]'>Colaborator : Brickbitz SA</h1>
             </div>
             <div className='flex flex-row items-start justify-between w-full mt-4'>
                 <div className='w-[75%]'>
