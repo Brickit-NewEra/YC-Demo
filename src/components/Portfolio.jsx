@@ -131,7 +131,7 @@ const Portfolio = () => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="profit" fill="#493DCF" />
+        <Bar dataKey="profit" fill="#493DCF" barSize={40}/>
       </BarChart>
       <div className='flex flex-row items-center justify-between h-[350px] w-full'>
         <div className='h-full w-[30%] '>
