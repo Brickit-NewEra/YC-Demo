@@ -5,7 +5,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const clientes = [
     { titulo: "Projects", direccion: "/projects" },
-    { titulo: "Portfolio", direccion: "/" },
+    { titulo: "Portfolio", direccion: "/portfolio" },
   ];
 
 const NavDesktop = ({logo,user,setUser}) => {

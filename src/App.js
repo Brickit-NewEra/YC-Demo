@@ -11,6 +11,7 @@ import Nav from "./components/Nav/Nav";
 import Home from "./components/Home/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [user, setUser] = useState({activo:true});
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" exacct element={<Home />} />
           <Route path="/projects" exacct element={<Projects />} />
           <Route path="/project" exacct element={<Project />} />
+          <Route path="/portfolio" exacct element={<Portfolio />} />
         </Routes>
       </Router>
     </>
