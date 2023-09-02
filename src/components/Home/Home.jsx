@@ -14,9 +14,9 @@ const Home = () => {
       <RealState />
       <Inverti />
       <Potencial />
-      <Pasos />
-      <Equipo />
-      <Preguntas />
+      {/* <Pasos /> */}
+      {/* <Equipo /> */}
+      {/* <Preguntas /> */}
     </>
   )
 }

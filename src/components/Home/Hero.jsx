@@ -22,7 +22,7 @@ const Hero = () => {
                             className="text-[24px] w-[450px] text-left text-gray400 "
                         >
                             Invierte tu dinero de forma inteligente en propiedades
-                            inmobiliarias tokenizadas.
+                            inmobiliarias.
                         </h1>
                         <div
 

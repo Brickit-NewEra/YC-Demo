@@ -84,7 +84,6 @@ const Project = () => {
 
                 </div>
             </div>
-            <h1 className='mt-4 text-[40px] text-gray500'>Activity</h1>
         </div>
     )
 }

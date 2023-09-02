@@ -33,69 +33,6 @@ const Projects = () => {
       riesgo: "Alto",
       img:project3
     },
-    {
-      titulo: "Complejo Residencial",
-      tipoProyecto: "Resort frente al mar",
-      descripcion:
-        "Un resort de lujo ubicado en primera línea de playa, con villas privadas, piscinas y acceso exclusivo al mar.",
-      pais: "Brasil",
-      riesgo: "Moderado",
-      img:project1
-    },
-    {
-      titulo: "Oficinas  SkyTower",
-      tipoProyecto: "Desarrollo de oficinas",
-      descripcion:
-        "Un rascacielos de oficinas de última generación con tecnología avanzada y espacios flexibles para empresas.",
-      pais: "Canadá",
-      riesgo: "Moderado",
-      img:project2
-    },
-    {
-      titulo: "Proyecto VerdeVida",
-      tipoProyecto: "Comunidad sostenible",
-      descripcion:
-        "Una comunidad residencial ecológica con casas energéticamente eficientes y áreas de conservación.",
-      pais: "Costa Rica",
-      riesgo: "Bajo",
-      img:project3
-    },
-    {
-      titulo: "Complejo SportMax",
-      tipoProyecto: "Instalaciones deportivas",
-      descripcion:
-        "Un centro deportivo de primer nivel con canchas de tenis y espacios para entrenamiento.",
-      pais: "Argentina",
-      riesgo: "Moderado",
-      img:project1
-    },
-    {
-      titulo: "Residencias BellaVista",
-      tipoProyecto: "Urbanización residencial",
-      descripcion:
-        "Una urbanización cerrada con casas contemporáneas, áreas recreativas y seguridad 24/7.",
-      pais: "Colombia",
-      riesgo: "Bajo",
-      img:project2
-    },
-    {
-      titulo: "Torre Financiera CityScape",
-      tipoProyecto: "Edificio de oficinas",
-      descripcion:
-        "Una torre de oficinas de alto nivel en el corazón financiero de la ciudad, con espacios premium .",
-      pais: "Chile",
-      riesgo: "Alto",
-      img:project3
-    },
-    {
-      titulo: "Resort Montaña Dorada",
-      tipoProyecto: "Destino turístico",
-      descripcion:
-        "Un resort de montaña con cabañas acogedoras, actividades al aire libre y vistas panorámicas de la naturaleza.",
-      pais: "Perú",
-      riesgo: "Moderado",
-      img:project1
-    },
   ];
 
   return (
