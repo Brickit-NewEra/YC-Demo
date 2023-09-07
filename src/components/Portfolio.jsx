@@ -12,6 +12,7 @@ import {
 import { PieChart, Pie, Cell } from 'recharts';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
+import Footer from '../components/Home/Footer'
 
 const data = [
   {
@@ -107,6 +108,7 @@ const Portfolio = () => {
   }, []);
 
   return (
+    <>
     <div className='w-screen min-h-screen flex flex-col items-center pt-[100px] justify-start px-20'>
       <div className='w-full flex flex-col'>
         <h1 className='text-left text-[32px] text-gray500'>Estimated balance</h1>
@@ -166,8 +168,10 @@ const Portfolio = () => {
 
         </div>
       </div>
-
+         
     </div>
+    <Footer   ></Footer>    
+    </>
   )
 }
 

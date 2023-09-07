@@ -79,7 +79,7 @@ const NavMobile = ({opened,setOpened,logo,user,setUser,}) => {
               );
             })}
             <button className="text-violet500 text-[26px] my-5 text-left font-regular font-bold  hover:text-gray500 absolute bottom-0" onClick={()=>{setOpened(!opened)}}>
-              Cerrar sesión
+            Log out
             </button>
           </div>
         )}

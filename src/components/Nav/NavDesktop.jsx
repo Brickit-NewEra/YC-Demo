@@ -37,7 +37,7 @@ const NavDesktop = ({logo,user,setUser}) => {
             );
           })}
           <button className="cursor-pointer text-violet500 bg-transparent border-[2px] rounded-[10px] border-violet500 font-regular font-bold font- text-[18px] px-2 py-[5px] ml-20" onClick={()=>{setUser({...user,activo:false});navigate("")}}>
-            Cerrar sesión
+          Log out
           </button>
         </div>
       )}
