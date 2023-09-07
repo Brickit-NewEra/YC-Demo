@@ -2,9 +2,10 @@ import React from "react";
 import { Card } from "primereact/card";
 import { Button } from "primereact/button";
 import { Chip } from 'primereact/chip';
+import { Icon } from '@iconify/react';
 
 
-const ProjectCard = ({ title, type, desc, country, risk,img }) => {
+const ProjectCard = ({ title, type, desc, country, risk, img, flag }) => {
   const header = (
     <img
       alt="Card"
@@ -36,10 +37,10 @@ const ProjectCard = ({ title, type, desc, country, risk,img }) => {
         <p className=" m-0 text-[16px] text-gray500 h-[70px]">{desc}</p>
         <br />
         <div className="flex flex-row items-center justify-start">
-          <Chip label={country} className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />
-          {risk === "Bajo" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
-          {risk === "Moderado" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
-          {risk === "Alto" && <Chip label={risk}  className="mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500" />}
+          <div className="flex flex-row items-center justify-around mr-2 px-4 py-2 bg-violet200 rounded-[20px] text-gray500">
+            <h1 className="mr-2">{country}</h1>
+            <Icon icon={`twemoji:flag-${flag}`} />
+          </div>
 
         </div>
       </div>

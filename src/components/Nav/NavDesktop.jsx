@@ -22,7 +22,7 @@ const NavDesktop = ({logo,user,setUser}) => {
               navigate("/login");
             }}
           >
-            Abrir cuenta
+            Sign in
             <Icon icon="formkit:arrowright" width="20" className='text-white ml-2'/>
           </button>
         </div>

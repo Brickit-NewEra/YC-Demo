@@ -13,7 +13,8 @@ const Projects = () => {
         "Un proyecto residencial de lujo con casas unifamiliares rodeadas de áreas verdes y comodidades modernas.",
       pais: "Uruguay",
       riesgo: "Moderado",
-      img:project1
+      img:project1,
+      flag:"uruguay"
     },
     {
       titulo: "Torres del Horizonte",
@@ -22,7 +23,8 @@ const Projects = () => {
         "Un conjunto de torres de apartamentos con vista panorámica a la ciudad y amplias zonas recreativas.",
       pais: "México",
       riesgo: "Bajo",
-      img:project2
+      img:project2,
+      flag:"mexico"
     },
     {
       titulo: "Centro Comercial",
@@ -31,7 +33,8 @@ const Projects = () => {
         "Un moderno centro comercial con tiendas de renombre, cines y restaurantes.",
       pais: "España",
       riesgo: "Alto",
-      img:project3
+      img:project3,
+      flag:"spain"
     },
     {
       titulo: "Complejo Residencial",
@@ -40,7 +43,8 @@ const Projects = () => {
         "Un resort de lujo ubicado en primera línea de playa, con villas privadas, piscinas y acceso exclusivo al mar.",
       pais: "Brasil",
       riesgo: "Moderado",
-      img:project1
+      img:project1,
+      flag:"brazil"
     },
     {
       titulo: "Oficinas  SkyTower",
@@ -49,7 +53,8 @@ const Projects = () => {
         "Un rascacielos de oficinas de última generación con tecnología avanzada y espacios flexibles para empresas.",
       pais: "Canadá",
       riesgo: "Moderado",
-      img:project2
+      img:project2,
+      flag:"canada"
     },
     {
       titulo: "Proyecto VerdeVida",
@@ -58,7 +63,8 @@ const Projects = () => {
         "Una comunidad residencial ecológica con casas energéticamente eficientes y áreas de conservación.",
       pais: "Costa Rica",
       riesgo: "Bajo",
-      img:project3
+      img:project3,
+      flag:"costa-rica"
     },
     {
       titulo: "Complejo SportMax",
@@ -67,7 +73,8 @@ const Projects = () => {
         "Un centro deportivo de primer nivel con canchas de tenis y espacios para entrenamiento.",
       pais: "Argentina",
       riesgo: "Moderado",
-      img:project1
+      img:project1,
+      flag:"argentina"
     },
     {
       titulo: "Residencias BellaVista",
@@ -76,7 +83,8 @@ const Projects = () => {
         "Una urbanización cerrada con casas contemporáneas, áreas recreativas y seguridad 24/7.",
       pais: "Colombia",
       riesgo: "Bajo",
-      img:project2
+      img:project2,
+      flag:"colombia"
     },
     {
       titulo: "Torre Financiera CityScape",
@@ -85,7 +93,8 @@ const Projects = () => {
         "Una torre de oficinas de alto nivel en el corazón financiero de la ciudad, con espacios premium .",
       pais: "Chile",
       riesgo: "Alto",
-      img:project3
+      img:project3,
+      flag:"chile"
     },
     {
       titulo: "Resort Montaña Dorada",
@@ -94,7 +103,8 @@ const Projects = () => {
         "Un resort de montaña con cabañas acogedoras, actividades al aire libre y vistas panorámicas de la naturaleza.",
       pais: "Perú",
       riesgo: "Moderado",
-      img:project1
+      img:project1,
+      flag:"peru"
     },
   ];
 
@@ -112,6 +122,7 @@ const Projects = () => {
               country={pr.pais}
               risk={pr.riesgo}
               img={pr.img}
+              flag={pr.flag}
             />
           );
         })}

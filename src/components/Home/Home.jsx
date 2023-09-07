@@ -6,17 +6,19 @@ import Potencial from './Potencial'
 import Pasos from './Pasos'
 import Equipo from './Equipo'
 import Preguntas from './Preguntas'
+import Footer from './Footer'
 
 const Home = () => {
   return (
     <>
       <Hero />
       <RealState />
-      <Inverti />
+      {/* <Inverti /> */}
       <Potencial />
       <Pasos />
-      <Equipo />
+      {/* <Equipo /> */}
       <Preguntas />
+      <Footer />
     </>
   )
 }

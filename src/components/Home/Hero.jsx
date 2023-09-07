@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import ImgEffect from './ImgEffect'
 import group6 from '../../image/group6.png'
+import imagehero from '../../image/imagehero.png'
 
 const Hero = () => {
 
@@ -14,31 +15,31 @@ const Hero = () => {
 
                             className="font-['Gelion'] text-[50px] w-[450px] text-left text-violet500 leading-tight space-y-2"
                         >
-                            La plataforma <br />de inversiones<br />
-                            <span className="text-gray500">que revoluciona el mercado</span>
+                            The investment platform 
+                            <span className="text-gray500"><br />that revolutionizes<br />the market.</span>
                         </h1>
                         <h1
 
                             className="text-[24px] w-[450px] text-left text-gray400 "
                         >
-                            Invierte tu dinero de forma inteligente en propiedades
-                            inmobiliarias tokenizadas.
+                            Invest your money intelligently in tokenized real estate properties.
                         </h1>
                         <div
 
                             className="flex flex-row w-[450px] mt-6 items-center justify-between "
                         >
                             <button className="bg-violet500 text-white rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
-                                Como funciona
+                            How it works
                             </button>
                             <button className="bg-white text-violet500 border-[2px] border-violet-300 rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
-                                Comienza ahora
+                                Start now
                             </button>
                         </div>
                     </div>
                 </div>
                 <div className="w-[100%] h-[100%] flex items-center justify-center ">
-                    <ImgEffect />
+                    {/* <ImgEffect /> */}
+                    <img src={imagehero} alt="" className='w-[60%]'/>
                 </div>
             </div>
             <div className="w-screen min-h-screen flex flex-col items-center justify-center lg:hidden pt-[80px] overflow-hidden">
