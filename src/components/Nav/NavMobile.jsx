@@ -13,7 +13,7 @@ const NavMobile = ({opened,setOpened,logo,user,setUser,}) => {
     let navigate = useNavigate();
   return (
     <>
-    <div className="fixed z-40 flex flex-row xl:hidden w-screen items-center justify-center bg-transparent py-4 z-40 overflow-hidden">
+    <div className="fixed z-40 flex flex-row xl:hidden w-screen items-center justify-center bg-white py-4 z-40 overflow-hidden">
       <img src={logo} alt="" className="h-[40px] cursor-pointer" onClick={()=>{navigate("/")}}/>
       <div
         id="nav-icon3"

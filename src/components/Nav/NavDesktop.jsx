@@ -12,7 +12,7 @@ const NavDesktop = ({logo,user,setUser}) => {
     let navigate = useNavigate();
   return (
     <>
-    <div className="fixed hidden w-screen bg-transparent xl:flex xl:flex-row justify-between items-center px-20 py-4 z-40">
+    <div className="fixed hidden w-screen  bg-transparent xl:flex xl:flex-row justify-between items-center px-20 py-4 z-40">
       <img src={logo} alt="" className="h-[50px] cursor-pointer" onClick={()=>{navigate("/")}}/>
       {!user.activo && (
         <div className="flex flex-row items-center">

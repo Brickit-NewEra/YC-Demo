@@ -28,12 +28,12 @@ const Hero = () => {
 
                             className="flex flex-row w-[450px] mt-6 items-center justify-between "
                         >
-                            <button className="bg-violet500 text-white rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
+                            <a href='https://brickbitz.com/constructoras' className="flex items-center justify-center bg-violet500 text-white rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
                             How it works
-                            </button>
-                            <button className="bg-white text-violet500 border-[2px] border-violet-300 rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
+                            </a>
+                            <a href='https://brickbitz.com/inversores' className="flex items-center justify-center bg-white text-violet500 border-[2px] border-violet-300 rounded-[30px] py-2 w-[48%] font-['Gelion'] text-[20px]">
                                 Start now
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

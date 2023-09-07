@@ -39,9 +39,7 @@ const Project = () => {
             </div>
             <div className='mt-4 flex flex-row items-*center justify-between'>
                 <div className='flex flex-row items-center justify-start'>
-                    <Chip label="Land" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
-                    <Chip label="Risk elevated" icon="pi pi-angle-double-up" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />
-                </div>
+                    <Chip label="Land" className="mr-2 px-4 py-2 bg-violet500 rounded-[20px] text-gray100" />                </div>
                 <h1 className='text-gray400 text-[20px]'>Colaborator : Brickbitz SA</h1>
             </div>
             <div className='flex flex-row items-start justify-between w-full mt-4'>
@@ -76,9 +74,8 @@ const Project = () => {
                     <h1 className='mt-2 text-gray300 text-[16px] text-left w-full'>Valuation</h1>
                     <h1 className=' text-[#0FB186] font-semibold text-[24px] text-left w-full'>USD $13.000.000</h1>
                     <div className='h-[1px] bg-gray300 w-full mt-2'></div>
-                    <div className='flex flex-row justify-betweem items-center w-full mt-4'>
-                        <h1 className=' text-gray300 text-[16px] text-left w-full'>Expected profit</h1>
-                        <Chip label="25%"  className="mr-2 px-4 py-2 bg-[#0FB186] rounded-[20px] text-gray100" />
+                    <div className='flex flex-row justify-betweem items-center w-full mt-4 '>
+                        <button className=' text-white bg-[#0FB186] text-[16px] rounded-[12px] items-center px-4 py-[2px] cursor-pointer'>Buy now</button>
                     </div>
 
 
