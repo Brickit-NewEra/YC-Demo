@@ -27,3 +27,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  /* Agrega cualquier otro estilo específico de Roboto que desees */
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  /* Agrega cualquier otro estilo específico de Roboto que desees */
+}
