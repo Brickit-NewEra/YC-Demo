@@ -125,6 +125,7 @@ const data3 = [
     total: 200,
     profit: "25%",
     project: "Great Buenos Aires",
+    date: "28/06/2023",
   },
   {
     token: "BTM",
@@ -132,6 +133,7 @@ const data3 = [
     total: 1000,
     profit: "25%",
     project: "NYC Tower",
+    date: "28/06/2023",
   },
   {
     token: "SAS",
@@ -139,6 +141,7 @@ const data3 = [
     total: 100,
     profit: "25%",
     project: "SIF Building",
+    date: "28/06/2023",
   },
   {
     token: "CDC",
@@ -146,6 +149,7 @@ const data3 = [
     total: 3000,
     profit: "25%",
     project: "Company And Storage",
+    date: "28/06/2023",
   },
   {
     token: "TKM",
@@ -153,6 +157,7 @@ const data3 = [
     total: 200,
     profit: "25%",
     project: "Great Buenos Aires",
+    date: "28/06/2023",
   },
 ];
 
@@ -192,10 +197,10 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="w-screen min-h-screen flex flex-col  pt-[100px] justify-start px-20">
+      <div className="w-screen min-h-screen flex flex-col  pt-[100px] justify-between px-20">
         <div className="w-full flex flex-col">
-          <div className="flex w-full items-center justify-start">
-            <div className="border mr-2 p-8 pr-20 rounded-[20px]">
+          <div className="flex w-full items-center justify-between border rounded-[20px]">
+            <div className=" mr-2 p-8 pr-20 rounded-[20px]">
               <h2 className="text-[20px]">Inversion Total</h2>
               <span className="text-[40px] font-bold text-[#473DC7] font-roboto">
                 $853,44 USD
@@ -204,14 +209,14 @@ const Portfolio = () => {
                 +20% desde el mes pasado
               </p>
             </div>
-            <div className="border mx-2 p-8 pr-20 rounded-[20px]">
+            <div className=" mx-2 p-8 pr-20 rounded-[20px]">
               <h2 className="text-[20px]">Tokens adquiridos</h2>
               <span className="text-[40px] font-bold font-roboto">+35</span>
               <p className="text-[14px] text-[#828282]">
                 +20% desde el mes pasado
               </p>
             </div>
-            <div className="border mx-2 p-8 pr-20 rounded-[20px]">
+            <div className=" mx-2 p-8 pr-20 rounded-[20px]">
               <h2 className="text-[20px]">Transacciones realizadas</h2>
               <span className="text-[40px] font-bold text-[#CC724C] font-roboto">
                 +40
@@ -220,7 +225,7 @@ const Portfolio = () => {
                 +20% desde el mes pasado
               </p>
             </div>
-            <div className="border mx-2 p-8 pr-20 rounded-[20px]">
+            <div className=" mx-2 p-8 pr-20 rounded-[20px]">
               <h2 className="text-[20px]">Ganancias</h2>
               <span className="text-[40px] font-bold text-[#58BD4F] font-roboto">
                 +300 USD
@@ -251,8 +256,8 @@ const Portfolio = () => {
             />
           </div> */}
         </div>
-        <div className="flex mt-10  w-full items-start justify-start h-fit">
-          <div className="card-container p-4 pt-6 pl-2 rounded-[16px] border w-[38vw]">
+        <div className="flex mt-6  w-full items-between justify-between h-fit ">
+          <div className="card-container p-4 pt-6 pl-2 rounded-[16px] border w-[45vw]">
             <h2 className="text-[18px] mb-6 pl-5">Overview</h2>
             <ResponsiveContainer width="100%" height={350}>
               <BarChart data={data6}>
@@ -274,7 +279,7 @@ const Portfolio = () => {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className="ml-5 card-container p-4 pt-6 rounded-[16px] border w-[30vw] h-[443px] px-10">
+          <div className="ml-5 card-container p-4 pt-6 rounded-[16px] border w-[70%] h-[443px] px-10">
             <h2 className="text-[22px] font-roboto font-medium">
               Ultimas transacciones
             </h2>
@@ -292,34 +297,69 @@ const Portfolio = () => {
                       <h3 className="text-[14px]">{token.project}</h3>
                     </div>
                   </div>
+                  <div className="flex w-[20%] justify-between">
+                    <h2 className="text-[#828282]">{token.date}</h2>
 
-                  <h3 className="font-bold">- ${token.total}</h3>
+                    <h3 className="font-bold">- ${token.total}</h3>
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
+        <div className="flex flex-row items-center justify-between h-[350px] w-full mt-5 mb-20">
+          <div className="w-[72%] h-[100%]">
+            <div className="w-full h-full flex items-center justify-start p-7 rounded-[20px] border">
+              <table className="w-full h-full  text-left ">
+                <thead style={{ borderBottom: " 1px solid lightgray" }}>
+                  <th className="h-10">Token</th>
+                  <th className="h-10">Cantidad</th>
+                  <th className="h-10">Total</th>
+                  <th className="h-10">Ganancia/Perdida</th>
+                </thead>
+                <tbody>
+                  {data3.map((row) => {
+                    return (
+                      <tr className="w-full">
+                        <td
+                          className="w-[20%]"
+                          style={{ borderBottom: " 1px solid lightgray" }}
+                        >
+                          {row.token}
+                        </td>
+                        <td
+                          className="w-[30%]"
+                          style={{ borderBottom: " 1px solid lightgray" }}
+                        >
+                          {row.cantidad}
+                        </td>
+                        <td
+                          className="w-[30%]"
+                          style={{ borderBottom: " 1px solid lightgray" }}
+                        >
+                          {row.total}
+                        </td>
+                        <td
+                          className="w-[20%]"
+                          style={{ borderBottom: " 1px solid lightgray" }}
+                        >
+                          {row.profit}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
 
-        {/* <BarChart
-        width={windowWidth - 100}
-        height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="profit" fill="#493DCF" barSize={40}/>
-      </BarChart> */}
-        {/* <div className="flex flex-row items-center justify-between h-[350px] w-full">
-          <div className="h-full w-[30%] ">
+              {/* <DataTable value={data3} tableStyle={{ minWidth: "1000px" }}>
+                <Column field="token" header="Token"></Column>
+                <Column field="cantidad" header="Amount"></Column>
+                <Column field="total" header="Total"></Column>
+                <Column field="profit" header="Profit"></Column>
+              </DataTable> */}
+            </div>
+          </div>
+          <div className="h-full ml-8 w-[28%] border rounded-[20px] flex items-center justify-center">
             <PieChart width={400} height={400}>
               <Pie
                 data={data2}
@@ -327,7 +367,9 @@ const Portfolio = () => {
                 nameKey="name"
                 cx="50%"
                 cy="50%"
-                outerRadius={150}
+                innerRadius={90}
+                outerRadius={120}
+                paddingAngle={5}
                 fill="#8884d8"
                 label
               >
@@ -339,22 +381,12 @@ const Portfolio = () => {
                 ))}
               </Pie>
               <Tooltip content={<CustomTooltip />} />
-              <Legend />
+              <Legend layout="vertical" align="right" verticalAlign="middle"/>
             </PieChart>
           </div>
-          <div className="w-[70%] h-[100%] ">
-            <div className="w-full h-full flex items-center justify-center">
-              <DataTable value={data3} tableStyle={{ minWidth: "1000px" }}>
-                <Column field="token" header="Token"></Column>
-                <Column field="cantidad" header="Amount"></Column>
-                <Column field="total" header="Total"></Column>
-                <Column field="profit" header="Profit"></Column>
-              </DataTable>
-            </div>
-          </div>
-        </div> */}
+        </div>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };
