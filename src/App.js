@@ -12,6 +12,7 @@ import Home from "./components/Home/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Portfolio from "./components/Portfolio";
+import ConsultProjectInvestor from './components/Projects/ConsultProjectInvestor'
 
 function App() {
   const [user, setUser] = useState({activo:true});
@@ -26,6 +27,7 @@ function App() {
           <Route path="/projects" exacct element={<Projects />} />
           <Route path="/project" exacct element={<Project />} />
           <Route path="/portfolio" exacct element={<Portfolio />} />
+          <Route path="/project-investor/:id"  element={<ConsultProjectInvestor></ConsultProjectInvestor>} />
         </Routes>
       </Router>
     </>
